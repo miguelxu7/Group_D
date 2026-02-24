@@ -1,1 +1,6 @@
 # Group_D
+
+### Group Members & Contact
+To contact the team, copy and paste the following list into the Outlook "To" field:
+
+`56323@novasbe.pt; 
