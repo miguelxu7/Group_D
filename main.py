@@ -43,3 +43,5 @@ class OkavangoData(BaseModel):
         # Paste your friend's Function 2 logic here to merge
         # Ensure self.world_map is updated with the merged data
         pass
+
+print("hello")
