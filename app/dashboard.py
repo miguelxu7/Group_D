@@ -46,21 +46,34 @@ if not gdf_plot.empty:
     recent_year = int(gdf_plot['Year'].max())
     st.info(f"Showing the most recent data available. Reference year: **{recent_year}**.")
 
-#4. Plot the World Map
-st.subheader(f"Map: {chosen_map}")
-fig, ax = plt.subplots(1, 1, figsize=(15, 8))
+#4. Plot the Interactive World Map
+st.subheader(f"Interactive Map: {chosen_map}")
 
-#Base map with a neutral color for countries without data
-gdf_current.plot(ax=ax, color='lightgrey', edgecolor='black', linewidth=0.2)
+import plotly.express as px
 
-#Overlay the actual data
 if not gdf_plot.empty:
-    gdf_plot.plot(column='value', ax=ax, legend=True,
-                  legend_kwds={'label': "Value", 'orientation': "horizontal"},
-                  cmap='viridis', edgecolor='black', linewidth=0.2)
-
-ax.set_axis_off()
-st.pyplot(fig)
+    #Create the interactive choropleth map
+    fig = px.choropleth(
+        gdf_plot,
+        geojson=gdf_plot.geometry,
+        locations=gdf_plot.index,
+        color="value",
+        hover_name="Entity",
+        color_continuous_scale="viridis",
+        projection="natural earth"
+    )
+    
+    #Clean up the map background and layout
+    fig.update_geos(fitbounds="locations", visible=False)
+    fig.update_layout(
+        margin={"r":0,"t":0,"l":0,"b":0},
+        geo=dict(bgcolor='rgba(0,0,0,0)')
+    )
+    
+    #Display the interactive map in Streamlit
+    st.plotly_chart(fig, use_container_width=True)
+else:
+    st.warning("No data available to generate the map.")
 
 #5. Graph: Top 5 and Bottom 5 Countries
 st.subheader("Top 5 and Bottom 5 Countries")
