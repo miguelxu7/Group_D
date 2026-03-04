@@ -118,3 +118,6 @@ if __name__ == "__main__":
         # how many countries got data merged?
         merged_count = gdf["value"].notna().sum()
         print(f"- {name}: rows={len(gdf)}, merged_values={merged_count}")
+
+
+        # this is a test
