@@ -87,7 +87,7 @@ def download_required_datasets(
         ),
         DatasetSpec(
             filename="share-degraded-land.csv",
-            url="https://ourworldindata.org/grapher/share-degraded-land.csv
+            url="https://ourworldindata.org/grapher/share-degraded-land.csv"
         ),
         DatasetSpec(
             filename="red_list_index.csv",
