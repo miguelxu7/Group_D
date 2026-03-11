@@ -82,7 +82,7 @@ class OkavangoData(BaseModel):
     def _load_raw_datasets(self) -> None:
         """
         Read each downloaded CSV into a pandas DataFrame and store
-        them in the ``datasets`` dictionary.
+        them in the ``datasets`` dictionary, standardizing column names.
         """
         csv_files: Dict[str, str] = {
             "annual_change_forest_area": "annual_change_forest_area.csv",
@@ -92,12 +92,22 @@ class OkavangoData(BaseModel):
             "red_list_index": "red_list_index.csv",
         }
 
+        # Naming variations found in different OWID datasets
+        rename_map = {
+            "entityName": "Entity",
+            "entity": "Entity",
+            "code": "Code"
+        }
+
         downloads_path = Path(self.download_dir)
 
         for name, filename in csv_files.items():
             filepath = downloads_path / filename
             if filepath.exists():
-                self.datasets[name] = pd.read_csv(filepath)
+                df = pd.read_csv(filepath)
+                # FIX: Standardize columns immediately after reading
+                df = df.rename(columns=rename_map)
+                self.datasets[name] = df
             else:
                 print(f"Warning: {filepath} not found, skipping.")
 
