@@ -1,11 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
-import sys
-import os
 
-#Add the parent directory to the path so we can import main.py from the root folder
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from main import OkavangoData
 
 #1. Page configuration and Title
