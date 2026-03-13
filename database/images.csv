@@ -45,3 +45,41 @@ Overall Risk Summary: DANGER: NO","You are an environmental risk assessment expe
 Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
 After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
 ",llama3.2,N
+2026-03-13T19:44:53.633152,41.8902,12.4922,10,C:\Users\theof\Documents\Group_D\images\41.8902_12.4922_10.png,"The image presents a satellite view of a large, flat area of land, possibly a country or a region. The land cover type is predominantly green, indicating a significant amount of vegetation. The vegetation density appears to be relatively high, with a few patches of brown or desert-like areas. The land cover type also includes some urban areas, suggesting human activity or development in the region. The image does not show any visible signs of human activity or development, such as roads, buildings, or other infrastructure. The land cover type is consistent with a forested area, which is evident from the presence of trees and other vegetation. The image does not provide any specific information about the land cover type or the health of the vegetation.","Describe this satellite image in detail. Focus on: land cover type (forest, urban, agricultural, water, desert, etc.), vegetation density and health, signs of human activity or development, visible environmental changes such as deforestation, erosion, or pollution, and any other notable features visible from above.
+",moondream,"Based on the description, here are the answers to the questions:
+
+1. No, there is no evidence of deforestation or significant loss of vegetation. The vegetation density appears to be relatively high, and the image suggests a forested area.
+
+2. No, there are no signs of urban sprawl or infrastructure encroachment on natural areas. The image does not show any visible signs of human activity or development.
+
+3. No, there are no visible signs of pollution, industrial activity, or waste dumping.
+
+4. No, there are no signs of soil erosion, land degradation, or desertification.
+
+5. No, there are no signs of water stress, flooding, or reduced water bodies.
+
+Overall risk summary:
+DANGER: NO","You are an environmental risk assessment expert. You have received the following description of a satellite image:
+""{description}""
+Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
+After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
+",llama3.2,N
+2026-03-13T19:48:57.522511,41.8902,12.4922,17,C:\Users\theof\Documents\Group_D\images\41.8902_12.4922_17.png,"The image presents a satellite view of a city with a large, circular stadium in the center. The city is surrounded by a mix of urban and rural areas, with buildings of varying heights and designs. The stadium is surrounded by a large parking lot, indicating a significant amount of human activity in the area. The city appears to be developing, as evidenced by the presence of the stadium and the parking lot. The vegetation density and health are relatively low, with only a few trees scattered throughout the city. The image also shows signs of human activity, such as the parking lot and the stadium, which are indicative of urban development.","Describe this satellite image in detail. Focus on: land cover type (forest, urban, agricultural, water, desert, etc.), vegetation density and health, signs of human activity or development, visible environmental changes such as deforestation, erosion, or pollution, and any other notable features visible from above.
+",moondream,"Based on the satellite image description:
+
+1. There is no explicit evidence of deforestation or significant loss of vegetation, but the relatively low vegetation density and scattered few trees suggest a lack of natural habitat preservation.
+
+2. Yes, there are signs of urban sprawl and infrastructure encroachment on natural areas, as the stadium and parking lot are situated in the heart of the city, indicating human activity and development in the area.
+
+3. There are no visible signs of pollution, industrial activity, or waste dumping mentioned in the description.
+
+4. There are no signs of soil erosion, land degradation, or desertification mentioned in the description.
+
+5. There are no signs of water stress, flooding, or reduced water bodies mentioned in the description.
+
+Overall Risk Summary:
+DANGER: YES","You are an environmental risk assessment expert. You have received the following description of a satellite image:
+""{description}""
+Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
+After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
+",llama3.2,Y
