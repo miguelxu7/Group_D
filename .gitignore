@@ -210,3 +210,6 @@ __marimo__/
 downloads/
 tests/test_downloads/
 .DS_Store
+images/*.png
+images/*.jpg
+images/*.jpeg

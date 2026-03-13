@@ -11,7 +11,7 @@ import pandas as pd
 from main import OkavangoData
 
 #1. Page configuration and Title
-st.set_page_config(page_title="Project Okavango", layout="wide")
+st.set_page_config(page_title="Environmental Maps | Project Okavango", layout="wide")
 st.title("Project Okavango - Environmental Analysis")
 
 #2. Initialize the Class with cache to prevent reloading on every interaction

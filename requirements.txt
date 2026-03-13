@@ -6,3 +6,6 @@ streamlit
 plotly
 matplotlib
 pytest
+ollama
+pyyaml
+pillow

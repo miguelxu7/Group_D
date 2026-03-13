@@ -1,0 +1,33 @@
+image_model:
+  name: moondream
+  prompt: >
+    Describe this satellite image in detail. Focus on: land cover type
+    (forest, urban, agricultural, water, desert, etc.), vegetation density
+    and health, signs of human activity or development, visible environmental
+    changes such as deforestation, erosion, or pollution, and any other
+    notable features visible from above.
+  settings:
+    temperature: 0.5
+
+text_model:
+  name: llama3.2
+  prompt: >
+    You are an environmental risk assessment expert. You have received the
+    following description of a satellite image:
+
+    "{description}"
+
+    Based on this description, answer each of the following questions briefly:
+    1. Is there evidence of deforestation or significant loss of vegetation?
+    2. Are there signs of urban sprawl or infrastructure encroachment on natural areas?
+    3. Is there visible pollution, industrial activity, or waste dumping?
+    4. Are there signs of soil erosion, land degradation, or desertification?
+    5. Are there signs of water stress, flooding, or reduced water bodies?
+
+    After answering the questions, provide a short overall risk summary.
+    Your final line must be exactly one of the following two options:
+    DANGER: YES
+    DANGER: NO
+  settings:
+    temperature: 0.2
+    max_tokens: 500
