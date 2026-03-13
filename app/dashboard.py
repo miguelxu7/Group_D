@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Ensure the project root is on the Python path so 'main' can be imported
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
