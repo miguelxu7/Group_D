@@ -1,0 +1,47 @@
+timestamp,latitude,longitude,zoom,image_path,image_description,image_prompt,image_model,text_description,text_prompt,text_model,danger
+2026-03-13T15:23:09.178694,-5.0,-55.0,10,C:\Users\theof\Documents\Group_D\images\-5.0_-55.0_10.png,"The image shows a satellite view of a green, unevenly textured surface. The predominant color of the surface is green, which could be a forest, urban area, or a patch of land with vegetation. The image is taken from a high angle, providing a bird's eye view of the landscape. The surface appears to be in a state of disrepair, with visible cracks and stains, suggesting that it has been exposed to the elements for an extended period. The vegetation density and health are not clearly visible, but the presence of trees or other vegetation indicates that there is some form of vegetation in the area. The image does not provide any information about human activity or development, but the presence of a large patch of land with vegetation could suggest that the area is experiencing some form of human intervention, such as deforestation or urban expansion. The image does not provide any information about the environmental changes that may have occurred in the area, but the presence of cracks and stains on the surface could be indicative of erosion or pollution.","Describe this satellite image in detail. Focus on: land cover type (forest, urban, agricultural, water, desert, etc.), vegetation density and health, signs of human activity or development, visible environmental changes such as deforestation, erosion, or pollution, and any other notable features visible from above.
+",moondream,"Based on the provided satellite image description, here are the brief answers to each question:
+
+1. There is no clear evidence of deforestation or significant loss of vegetation, as the vegetation density and health are not clearly visible, and the image only suggests the presence of trees or other vegetation.
+
+2. There are no signs of urban sprawl or infrastructure encroachment on natural areas, as the image does not provide any information about human activity or development.
+
+3. There are no visible signs of pollution, industrial activity, or waste dumping in the image.
+
+4. There are signs of soil erosion, land degradation, or desertification, indicated by the visible cracks and stains on the surface, suggesting that the area has been exposed to the elements for an extended period.
+
+5. There is no indication of water stress, flooding, or reduced water bodies in the image.
+
+Overall risk summary: The presence of visible cracks and stains on the surface, suggesting soil erosion and land degradation, indicates a moderate environmental risk. The lack of clear evidence of deforestation, pollution, or water stress suggests that the risk is not extreme, but the image still warrants further investigation and monitoring to assess the extent of the environmental concerns. DANGER: NO","You are an environmental risk assessment expert. You have received the following description of a satellite image:
+""{description}""
+Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
+After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
+",llama3.2,N
+2026-03-13T15:26:16.852546,40.0,7.0,10,C:\Users\theof\Documents\Group_D\images\40.0_7.0_10.png,"The image shows a satellite view of a dark blue area, possibly a forest or a desert, with a few visible signs of human activity or development. The land cover type is not clearly identifiable, but the area appears to be relatively dense with vegetation. The vegetation density and health are not clearly visible, but the image suggests that the area is not in a state of complete decay or abandonment. The image does not show any visible signs of human activity or development, such as roads, buildings, or other infrastructure. The image does not provide any information about the environmental changes that may have occurred in the area, such as deforestation, erosion, or pollution.","Describe this satellite image in detail. Focus on: land cover type (forest, urban, agricultural, water, desert, etc.), vegetation density and health, signs of human activity or development, visible environmental changes such as deforestation, erosion, or pollution, and any other notable features visible from above.
+",moondream,"Based on the description, here are the answers to each question:
+
+1. No, there is no clear evidence of deforestation or significant loss of vegetation.
+2. No, there are no visible signs of urban sprawl or infrastructure encroachment on natural areas.
+3. No, there is no visible pollution, industrial activity, or waste dumping.
+4. No, there are no signs of soil erosion, land degradation, or desertification.
+5. No, there are no signs of water stress, flooding, or reduced water bodies.
+
+Overall Risk Summary: DANGER: NO","You are an environmental risk assessment expert. You have received the following description of a satellite image:
+""{description}""
+Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
+After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
+",llama3.2,N
+2026-03-13T15:28:10.108067,23.0,13.0,8,C:\Users\theof\Documents\Group_D\images\23.0_13.0_8.png,"The image shows a satellite view of a desert landscape. The desert appears to be a mix of sand and dirt, with a brownish hue. The terrain is characterized by a large, flat area of sand, with a few small hills and valleys scattered throughout. The desert is not densely populated with vegetation, and the few visible plants are sparse and low to the ground. The image does not contain any discernible human activity or development, and the desert appears to be in a relatively remote and untouched location.","Describe this satellite image in detail. Focus on: land cover type (forest, urban, agricultural, water, desert, etc.), vegetation density and health, signs of human activity or development, visible environmental changes such as deforestation, erosion, or pollution, and any other notable features visible from above.
+",moondream,"Based on the description:
+
+1. There is no evidence of deforestation or significant loss of vegetation. The sparse and low-growing vegetation suggests that the area has not experienced significant habitat destruction or degradation.
+2. There are no signs of urban sprawl or infrastructure encroachment on natural areas. The image shows a remote and untouched location with no visible human development or activity.
+3. There are no visible signs of pollution, industrial activity, or waste dumping. The desert landscape appears pristine and unaffected by human impact.
+4. There are signs of soil erosion, land degradation, or desertification, as the desert is characterized by a flat area of sand with a few small hills and valleys, suggesting that the terrain may have been altered over time.
+5. There are no signs of water stress, flooding, or reduced water bodies. The image does not show any visible water bodies, and the desert landscape appears dry and arid.
+
+Overall Risk Summary: DANGER: NO","You are an environmental risk assessment expert. You have received the following description of a satellite image:
+""{description}""
+Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
+After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
+",llama3.2,N
