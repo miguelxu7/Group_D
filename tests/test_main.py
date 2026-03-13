@@ -1,31 +1,48 @@
 import os
+from pathlib import Path
+
 import pytest
 import geopandas as gpd
+
 from main import OkavangoData
 
-# This fixture ensures we have a clean instance for each test
+
+TEST_DOWNLOADS = os.path.join(os.path.dirname(__file__), "test_downloads")
+
+
 @pytest.fixture
 def data_handler():
-    # We use a specific test_downloads folder to avoid clobbering real data
-    return OkavangoData(download_dir="test_downloads")
+    """Create an OkavangoData instance using the test downloads folder."""
+    return OkavangoData(download_dir=TEST_DOWNLOADS)
+
 
 def test_function_1_downloads(data_handler):
     """
-    Test for Function 1: Verifies that the download directory 
-    is created and contains files.
+    Test for Function 1: Verifies that the download directory
+    is created and contains all expected files.
     """
     assert os.path.exists(data_handler.download_dir)
-    # Replace 'example.csv' with one of the actual filenames your function creates
-    # assert os.path.exists(os.path.join(data_handler.download_dir, "forest_area.csv"))
+
+    expected_files = [
+        "annual_change_forest_area.csv",
+        "annual_deforestation.csv",
+        "terrestrial_protected_areas.csv",
+        "share_degraded_land.csv",
+        "red_list_index.csv",
+        "ne_110m_admin_0_countries.zip",
+    ]
+    for filename in expected_files:
+        filepath = Path(data_handler.download_dir) / filename
+        assert filepath.exists(), f"Missing expected file: {filename}"
+
 
 def test_function_2_merges(data_handler):
     """
-    Test for Function 2: Verifies that the world_map attribute 
-    is a GeoDataFrame and contains merged data.
+    Test for Function 2: Verifies that merged_maps contains
+    GeoDataFrames with the expected 'value' column from the merge.
     """
-    # Check if the map was loaded as a GeoDataFrame
-    assert isinstance(data_handler.world_map, gpd.GeoDataFrame)
-    
-    # Check if the merge worked (the left dataframe must be geopandas)
-    # Check for a column that exists in your CSV but NOT in the original map
-    # assert "annual_change" in data_handler.world_map.columns
+    assert len(data_handler.merged_maps) > 0, "No merged maps were created"
+
+    for name, gdf in data_handler.merged_maps.items():
+        assert isinstance(gdf, gpd.GeoDataFrame), f"{name} is not a GeoDataFrame"
+        assert "value" in gdf.columns, f"{name} is missing the 'value' column"

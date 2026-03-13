@@ -206,5 +206,7 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Project-specific
 downloads/
-downloads/.gitkeep
+tests/test_downloads/
+.DS_Store

@@ -1,0 +1,8 @@
+geopandas
+pandas
+pydantic
+requests
+streamlit
+plotly
+matplotlib
+pytest

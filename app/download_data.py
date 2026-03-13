@@ -6,8 +6,6 @@ from typing import Optional
 import time
 import requests
 
-print("download_data.py is running")
-
 @dataclass(frozen=True)
 class DatasetSpec:
     """Represents a dataset to download."""
