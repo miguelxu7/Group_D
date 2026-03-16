@@ -194,3 +194,22 @@ Overall Risk Summary: The urban area appears to be experiencing some level of ur
 Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
 After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
 ",llama3.2,N
+2026-03-16T01:08:38.104131,40.7128,-74.006,10,C:\Users\theof\Documents\Group_D\images\40.7128_-74.006_10.png,"The image presents a satellite view of a large city, likely New York City, with a focus on the surrounding water bodies. The city is situated on the East Coast of the United States, with the Hudson River flowing through its center. The city's land cover is predominantly urban, with buildings and infrastructure visible throughout the image. The surrounding water bodies include the Hudson River, which is a significant part of the city's landscape. The image also shows the coastline of New York City, which is densely populated with buildings and features a mix of urban and natural elements. The presence of trees and vegetation indicates that the city has a green space within its urban environment. The image provides a comprehensive view of the city's layout and its relationship with the surrounding water bodies.","Describe this satellite image in detail. Focus on: land cover type (forest, urban, agricultural, water, desert, etc.), vegetation density and health, signs of human activity or development, visible environmental changes such as deforestation, erosion, or pollution, and any other notable features visible from above.
+",moondream,"Based on the description, here are the brief answers to the questions:
+
+1. There is no evidence of deforestation or significant loss of vegetation. The presence of trees and vegetation suggests that the city has a green space within its urban environment.
+
+2. There are signs of urban sprawl or infrastructure encroachment on natural areas, as the image shows a densely populated coastline with a mix of urban and natural elements.
+
+3. There is no visible pollution, industrial activity, or waste dumping mentioned in the description. The focus of the image is on the city's layout and relationship with water bodies.
+
+4. There are no signs of soil erosion, land degradation, or desertification mentioned in the description.
+
+5. There are no signs of water stress, flooding, or reduced water bodies mentioned in the description. The image shows the Hudson River and the surrounding water bodies, suggesting that they are intact.
+
+Overall Risk Summary:
+DANGER: NO","You are an environmental risk assessment expert. You have received the following description of a satellite image:
+""{description}""
+Based on this description, answer each of the following questions briefly: 1. Is there evidence of deforestation or significant loss of vegetation? 2. Are there signs of urban sprawl or infrastructure encroachment on natural areas? 3. Is there visible pollution, industrial activity, or waste dumping? 4. Are there signs of soil erosion, land degradation, or desertification? 5. Are there signs of water stress, flooding, or reduced water bodies?
+After answering the questions, provide a short overall risk summary. Your final line must be exactly one of the following two options: DANGER: YES DANGER: NO
+",llama3.2,N
