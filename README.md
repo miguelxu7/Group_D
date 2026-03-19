@@ -79,6 +79,7 @@ Group_D/
 │       └── 2_AI_Risk_Assessment.py  # Page 2 — AI Risk Assessment
 ├── database/
 │   └── images.csv            # Logged pipeline runs
+├── danger_images/            # README example images (danger detection)
 ├── downloads/                # Downloaded OWID + Natural Earth datasets
 ├── images/                   # Downloaded satellite images
 ├── notebooks/                # Prototyping notebooks
