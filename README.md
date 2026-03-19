@@ -113,16 +113,31 @@ Includes a top-5 / bottom-5 country bar chart and per-country data lookup.
 
 ## Examples of Environmental Danger Detection
 
-> **Note:** Run the app, test three locations, and add screenshots here with a brief description of what was detected.
+The following three examples demonstrate the app successfully identifying areas of environmental risk using satellite imagery and AI analysis.
 
-### Example 1
-*(Add screenshot and description)*
+### Example 1 — Aral Sea, Kazakhstan/Uzbekistan (Desertification & Water Stress)
 
-### Example 2
-*(Add screenshot and description)*
+![Aral Sea](danger_images/45.5_58.5_9.png)
 
-### Example 3
-*(Add screenshot and description)*
+**Coordinates:** Lat: 45.5, Lon: 58.5, Zoom: 9
+
+The Aral Sea is one of the worst environmental disasters in modern history. Once the fourth-largest lake in the world, it has shrunk dramatically due to Soviet-era irrigation projects. The satellite image shows a desert landscape with a remaining body of water surrounded by sand dunes and barren terrain. The AI models detected signs of **soil erosion, land degradation, and desertification**, as well as **water stress**, correctly flagging the area as **DANGER: YES**.
+
+### Example 2 — Linfen, Shanxi Province, China (Urban Sprawl & Land Degradation)
+
+![Linfen](danger_images/36.1_111.5_12.png)
+
+**Coordinates:** Lat: 36.1, Lon: 111.5, Zoom: 12
+
+Linfen is located in China's coal belt and has historically been ranked among the most polluted cities in the world. The satellite image reveals a densely populated urban area with a river, surrounded by areas of varying vegetation health. The AI models identified **urban sprawl encroaching on natural areas** and signs of **deforestation and land degradation**, flagging the area as **DANGER: YES**.
+
+### Example 3 — Cerrejón Coal Mine, La Guajira, Colombia (Mining, Erosion & Pollution)
+
+![Cerrejón](danger_images/11.1_-72.6_14.png)
+
+**Coordinates:** Lat: 11.1, Lon: -72.6, Zoom: 14
+
+The Cerrejón mine is one of the largest open-pit coal mines in the world. The satellite image shows a landscape scarred by mining activity, with visible deforestation, erosion patterns, and signs of pollution. The AI models detected **deforestation, soil erosion, pollution, and urban sprawl**, flagging the area as **DANGER: YES**.
 
 ---
 
