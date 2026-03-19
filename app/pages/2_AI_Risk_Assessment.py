@@ -98,7 +98,12 @@ if run_btn:
     st.markdown(f"**Assessment model:** `{result['text_model']}`")
 
     with st.expander("Full model response", expanded=True):
-        st.write(result["text_description"])
+        import re
+        # Re-format numbered items onto separate lines for readability
+        formatted = re.sub(r"\s*(\d+)\.\s", r"\n\n\1. ", result["text_description"])
+        # Put "Overall" summary on its own line too
+        formatted = re.sub(r"\s*(Overall\b)", r"\n\n\1", formatted)
+        st.markdown(formatted.strip())
 
     # Visual danger indicator
     danger_flag = str(result.get("danger", "N")).strip().upper()

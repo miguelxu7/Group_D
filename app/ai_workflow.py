@@ -312,17 +312,21 @@ def run_pipeline(
     image_description = analyze_image(image_path, config)
     text_description, danger = assess_danger(image_description, config)
 
+    def _oneline(text: str) -> str:
+        """Collapse newlines so each CSV record stays on a single row."""
+        return " ".join(text.replace("\r", "").split())
+
     record: Dict[str, Any] = {
         "timestamp": datetime.now().isoformat(),
         "latitude": lat,
         "longitude": lon,
         "zoom": zoom,
         "image_path": str(image_path),
-        "image_description": image_description,
-        "image_prompt": config["image_model"]["prompt"],
+        "image_description": _oneline(image_description),
+        "image_prompt": _oneline(config["image_model"]["prompt"]),
         "image_model": config["image_model"]["name"],
-        "text_description": text_description,
-        "text_prompt": config["text_model"]["prompt"],
+        "text_description": _oneline(text_description),
+        "text_prompt": _oneline(config["text_model"]["prompt"]),
         "text_model": config["text_model"]["name"],
         "danger": "Y" if danger else "N",
     }
